@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google nasa fonts: inter and DM Mono -->
+  <script src="https://kit.fontawesome.com/1a261dd86e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+  <script defer src="index.js"></script>
+  <title>Daily Space</title>
+</head>
+
+<body>
+  <div class="app-container">
+
+    <header>
+      <nav class="sticky">
+        <div class="logo">
+          <h2><span><i class="fa-solid fa-earth-americas"></i></span> Daily Space</h2>
+        </div>
+        <div class="links">
+          <ul>
+            <li class="nav-link home-link">
+              <a href="#">
+                <span class="today"></span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="nasa" href="https://www.nasa.gov/" target="_blank">
+                <span>
+                  <i class="fas fa-space-shuttle"></i>
+                  NASA
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="head-title">
+        <h1>NASA Picture of the Day</h1>
+        <p>Enjoy the daily "Picture of the Day" from NASA and </p>
+        <p>a month long list from their "Picture of the Day" series</p>
+      </section>
+      <section class="all-logic-btns">
+        <div class="btns-only">
+          <button class="btn-today">Todays POTD</button>
+          <button class="list-month-btn">Get the List of POTDs</button>
+          <button class="remove-selected-potd hidden">Remove Selected POTD</button>
+        </div>
+        <div id="loadingIndicator" class="loading-indicator indicator hidden"> <i class="fas fa-spinner fa-spin"></i>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Dynamic List -->
+      <section class="one-month-results">
+        <div class="hidden-list-container hidden">
+          <div class="date-range-container">
+            <h3 class="month-range hidden"></h3>
+          </div>
+          <div class="title-btns hidden">
+            <!-- dynamically displayed titles list as btns -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Sections to display Today POTD or Selected POTD Container with image-->
+      <section class="today-container potd-style-container">
+        <div class="hidden-container">
+          <h2 class="today-title h2-detail"></h2>
+          <div class="img-container">
+            <a class="today-link link-detail" href="" target="_blank">
+              <img class="today-img enlarge-link img-detail" src="" alt="">
+            </a>
+          </div>
+          <div class="potd-details">
+            <p class="today-date date-detail"></p>
+            <p class="today-copy copy-detail"></p>
+            <p class="today-expl expl-detail"></p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="selected-potd potd-style-container">
+        <div class="selected-potd-container hidden hidden-container">
+          <h2 class="potd-title h2-detail"></h2>
+          <div class="img-container">
+            <a href="" class="potd-url link-detail" target="_blank">
+              <img src="" alt="" class="potd-img img-detail hidden">
+            </a>
+          </div>
+          <div class="potd-details">
+            <p class="potd-date date-detail"></p>
+            <p class="potd-copy copy-detail"></p>
+            <p class="potd-expl expl-detail"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="foot-logo">
+        <a href="https://jennifersieber.netlify.app/" target="_blank">
+          <span>
+            <i class="fa-solid fa-earth-americas"></i>
+          </span>
+          Daily Space by Jennifer Sieber
+        </a>
+      </div>
+      <div class="foot-socials">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/jennifer-sieber-74a54726b/" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/JenniferSieber" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://twitter.com/JenWebDev" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

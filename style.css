@@ -1,0 +1,294 @@
+/* nasa.gov insignia colors: nasa blue: rgb 0,50,160 & nasared rgb: 228, 0, 43 // Fonts: Helvetica and Garamond  & via google: font-family: 'Inter', sans-serif  DM Mono, sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+body {
+  font-family: 'Inter', monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background: black;
+  min-width: 30rem;
+  background-image: url(./imgs/foot-bg-pexels-philippe-donn-1169754.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, button {
+  all: unset;
+  font-family: 'DM Mono', monospace;
+  cursor: pointer;
+  text-align: center;
+  transition: all 3ms ease;
+}
+
+a:hover {
+  color: rgb(228, 0, 43);
+}
+
+button {
+  border-radius: .8rem;
+}
+
+button:hover {
+  background-color: rgba(0,50,160, 0.3);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, .8);
+  width: 100%;
+  padding: 1rem;
+}
+
+nav h2 {
+  font-family: 'DM Mono', monospace;
+  font-size: 2.5rem;
+}
+
+.fa-earth-americas {
+  color: rgb(0,50,160);
+  font-size: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  height: 3rem;
+  font-family: 'Inter', 'DM Mono', sans-serif;
+  text-align: center;
+  color: rgb(228, 0, 43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+nav a:hover {
+  background-color: rgba(0,50,160, 0.3);
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem 1rem;
+  border-radius: .8rem;
+  color: white;
+  height: 100%;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.nasa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.head-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.head-title h1 {
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-family: 'DM Mono', monospace;
+}
+
+.head-title p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.all-logic-btns {
+ width: 100%;
+ padding: 1rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+}
+.btns-only {
+  display: flex;
+}
+
+.all-logic-btns button {
+  margin: .5rem;
+  font-size: 1.5rem;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  padding: .5rem 1rem;
+  background: rgba(0, 0, 0, .6);
+  background-color: rgba(0,50,160, 0.6);
+  font-size: 1.15rem;
+}
+
+.all-logic-btns button:hover {
+  background: rgba(228, 0, 43, .8);
+}
+
+.fa-spin {
+  font-size: 3rem;
+}
+
+main {
+  background: rgba(0, 0, 0, .6);
+  border-radius: .8rem;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.one-month-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.month-range {
+  font-family: 'DM Mono', monospace;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.title-btns {
+  margin-left: 2rem;
+  padding: .25rem .5rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-btns button {
+  font-family: 'Inter', sans-serif;
+  border: rgb(0,50,160) 1px solid;
+  margin: .25rem;
+  padding: .5rem .9rem;
+  background: none;
+  font-size: 1.15rem;
+}
+
+.title-btns button:hover {
+  background: rgba(0,50,160, 0.6);
+}
+
+.h2-detail {
+  font-family: 'DM Mono', monospace;
+  font-size: 2rem;
+  padding: .5rem;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  min-width: 30rem;
+}
+
+.img-detail {
+  border: rgba(0,50,160, 0.3) 4px solid;
+  border-radius: .8rem;
+  max-width: 70%;
+}
+
+.img-detail:hover {
+  border: rgb(0,50,160) 4px solid;
+}
+
+.potd-details {
+  background: rgba(0, 0, 0, .8);
+  padding:  1rem 2rem;
+  border-radius: .8rem;
+}
+
+.copy-detail {
+  font-size: 2rem;
+  margin: .5rem 0;
+}
+.expl-detail {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .7rem 0;
+}
+
+.foot-logo:hover {
+  color: red;
+}
+
+.foot-logo i {
+  font-size: 2.5rem;
+}
+.foot-socials ul {
+  color: rgb(0,50,160, 0.8);
+  display: flex;
+  margin-top: 1rem;
+}
+
+.foot-socials ul li {
+  margin: 0 1rem;
+}
+
+.foot-socials ul a {
+  font-size: 2rem;
+}
+
+.foot-socials ul a:hover {
+  color: rgb(228, 0, 43);
+}
+
+/* HIDDEN Elements */
+.hidden {
+  display: none;
+}
