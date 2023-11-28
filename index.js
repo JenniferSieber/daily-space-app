@@ -1,4 +1,4 @@
-const key = `A0aXt5FevH8J2B856vH5S7X8sYieYR8QShaCzFNY`;
+const key = `${your NASA API Key Here}`;
 const todayDate = document.querySelector(".today");
 // all logic btns section
 const allLogicBtns = document.querySelector(".all-logic-btns");
